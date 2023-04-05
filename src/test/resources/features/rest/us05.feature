@@ -1,4 +1,5 @@
-Feature: As a librarian, I want to create a new user
+Feature: : As a user, I want to view my own user information using the API
+  so that I can see what information is stored about me
 
   @us05
   Scenario Outline: Decode User

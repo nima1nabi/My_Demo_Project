@@ -1,6 +1,6 @@
 Feature: As a librarian, I want to create a new user
   @us04
-  Scenario: Create a new user
+  Scenario: Create a new user API
     Given I logged Library api as a "librarian"
     And Accept header is "application/json"
     And Request Content Type header is "application/x-www-form-urlencoded"
@@ -13,7 +13,7 @@ Feature: As a librarian, I want to create a new user
 
 
    @us04 @ui @db
-  Scenario: Create a new user
+  Scenario: Create a new user all layers
     Given I logged Library api as a "librarian"
     And Accept header is "application/json"
     And Request Content Type header is "application/x-www-form-urlencoded"

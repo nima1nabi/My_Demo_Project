@@ -1,5 +1,5 @@
-Feature: As a user, I want to search for a specific user by their name or email address using
-  the API so that I can quickly find the information I need.
+Feature: As a user, I want to search for a specific user by their id
+  so that I can quickly find the information I need.
 
   @us02
   Scenario: Retrieve single user
