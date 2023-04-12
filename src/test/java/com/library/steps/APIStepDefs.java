@@ -63,7 +63,7 @@ public class APIStepDefs {
     }
     @Then("{string} field should not be null")
     public void field_should_not_be_null(String path) {
-        thenPart.body(path,is(notNullValue()));
+        thenPart.body(path,everyItem(notNullValue()));
     }
 
     /**
