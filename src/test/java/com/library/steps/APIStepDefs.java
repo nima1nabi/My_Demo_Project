@@ -154,7 +154,7 @@ public class APIStepDefs {
 
 
         // DB DATA  --> Actual --> DB needs to show data that we add through API
-        //
+
         DB_Util.runQuery("select * from books where id='"+bookID+"'");
         Map<String, Object> DBBook = DB_Util.getRowMap(1);
         System.out.println("--------- DB DATA -------------");
@@ -188,6 +188,9 @@ public class APIStepDefs {
         String UIIsbn = bookPage.isbn.getAttribute("value");
         String UIDesc = bookPage.description.getAttribute("value");
 
+        // We don't have category name information in book page.
+        // We only have id of category
+        // with the help of category id we will find category name by running query
         // Find category as category_id
         String UIBookCategory = BrowserUtil.getSelectedOption(bookPage.categoryDropdown);
         DB_Util.runQuery("select id from book_categories where name='"+UIBookCategory+"'");
