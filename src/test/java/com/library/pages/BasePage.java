@@ -26,8 +26,8 @@ public abstract  class BasePage
     @FindBy(xpath ="//a[.=\" Signup / Login\"]" )
     public WebElement signinBTN;
 
-    @FindBy(xpath = "//h2[normalize-space()='New User Signup!']")
-    public  WebElement signupMSG;
+//    @FindBy(xpath = "//h2[.='New User Signup!']")
+//    public  WebElement signupMSG;
     @FindBy(xpath = "//input[@placeholder='Name']" )
     public  WebElement nameInput;
 
