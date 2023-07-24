@@ -1,5 +1,5 @@
 Feature:Register User
-  @wip
+  @nima
   Scenario: User registration and account deletion
     Given I launch the browser
     When I navigate to "http://automationexercise.com"
@@ -15,6 +15,8 @@ Feature:Register User
     And I select the "Sign up for our newsletter!" checkbox
     And I select the "Receive special offers from our partners!" checkbox
     And I fill in the following additional details:
+
+
       | First name | Last name | Company | Address | Address2 | Country | State | City | Zipcode | Mobile Number |
       | John | Smith | ABC Inc | Main St | Apt 101 | United States | California | LA | 90001 | 1234567890 |
     And I click the "Create Account" button

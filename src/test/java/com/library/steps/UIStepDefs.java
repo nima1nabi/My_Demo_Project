@@ -30,7 +30,9 @@ public class UIStepDefs extends BasePage
     }
     @When("I navigate to {string}")
     public void i_navigate_to(String url) {
-        Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        //Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+        System.out.println("url = " + url);
+        Driver.getDriver().get(url);
 
     }
     @Then("I verify that the home page is visible successfully")
@@ -124,8 +126,10 @@ public void i_fill_in_the_required_account_details(List<Map<String,String>> fiel
 
     WebElement selectCheckBox = Driver.getDriver().findElement(By.xpath("//label[text()='" + selectCheckbox +"']"));
     selectCheckBox.click();
-       // BrowserUtil.waitFor(1);
-      // Assert.assertTrue(selectCheckBox.isSelected());    //Assert failes possible bug
+        BrowserUtil.waitFor(2);
+        System.out.println("selectCheckBox = " + selectCheckBox.isSelected());
+       //Assert.assertTrue(selectCheckBox.isSelected())    //Assert failes possible bug
+        //svssvkvsvk;
 
 
     }
